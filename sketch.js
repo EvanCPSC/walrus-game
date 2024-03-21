@@ -14,8 +14,8 @@ function draw() {
   background('#BC0E92');
   textSize(18);
   image(walbot, width/4, 0, width/2, width/2);
-  image(tusl, width/4, 0, width/2, width/2);
-  image(tusr, width/4, 0, width/2, width/2);
+  image(tusl, width/4, numl, width/2, width/2);
+  image(tusr, width/4, numr, width/2, width/2);
   image(waltop, width/4, 0, width/2, width/2);
   
   text("score = " + score, width/2-36, height/2+50);
@@ -23,6 +23,7 @@ function draw() {
   text(numl, width/3+12, 250);
   text(numr, width-width/3-width/12+16, 250);
   
+  text("Guess the lower tusk!", width/3+4, 300);
   
   let btnl = createButton('left');
   btnl.position(width/3, 200);
